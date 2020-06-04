@@ -1,0 +1,19 @@
+$("#logout").on('click',function(){
+    var isConfirm = confirm('您是否要继续退出?')
+    if(isConfirm){
+        //实现登出功能
+        $.ajax({
+            type:'post',
+            url:'/logout',
+            data:{
+                message:"退出成功"
+            },
+            success:function(){
+                location.href='login.html'
+            },
+            error:function(){
+                alert("退出失败")
+            }
+        })
+    }
+})
