@@ -35,7 +35,7 @@
             <input id="site_logo" name="site_logo" type="hidden">
             <label class="form-image">
               <input id="logo" type="file" name="logo">
-              <img src="../assets/img/logo.png">
+              <img src="../assets/img/logo.png" id="preview">
               <i class="mask fa fa-upload"></i>
             </label>
             <input type="hidden" name="logo" id="hiddenLogo">
@@ -63,10 +63,10 @@
           <label class="col-sm-2 control-label">评论</label>
           <div class="col-sm-6">
             <div class="checkbox">
-              <label><input id="comment_status" name="comment" type="checkbox" checked>开启评论功能</label>
+              <label><input id="comment_status" name="comment" value="true" type="checkbox" checked>开启评论功能</label>
             </div>
             <div class="checkbox">
-              <label><input id="comment_reviewed" name="review" type="checkbox" checked>评论必须经人工批准</label>
+              <label><input id="comment_reviewed" name="review" value="true" type="checkbox" checked>评论必须经人工批准</label>
             </div>
           </div>
         </div>
